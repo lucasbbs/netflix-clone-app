@@ -1,3 +1,115 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Elementos base */
 body {
-  background-color: blue;
+  background-color: var(--preta);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.logo {
+  background: url('/img/logo-netflix.png');
+  height: 50px;
+  width: 150px;
+  background-size: cover;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.title {
+  background: url('/img/logo-House.png');
+  height: 151px;
+  width: 448px;
+  background-size: cover;
+}
+/* filme principal */
+.filme-principal {
+  font-size: 16px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('/img/capa-house.jpg');
+
+  height: 600px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .description {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+h3.titulo {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  margin-top: 15%;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  /* outline: none; */
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: white;
+  color: var(--preta);
+}
+
+.button i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel-filmes {
+  margin-top: 5px;
 }
